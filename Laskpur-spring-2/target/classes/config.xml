@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!--
+		Teacher t = new Teacher();
+		Student std = new Student();
+    	std.setTeacher(t);
+	  -->
+<!-- 	<bean class="com.ts.Student" name="std1">
+		<property name="teacher" ref="tch"/>
+	</bean>	
+ -->	
+	<!-- Student std2 = new Student(5, "Anarkali");  -->
+	<!-- <bean class="com.ts.Student" name="std2">
+		<constructor-arg value="Anarkali" index="1"></constructor-arg>
+		<constructor-arg value="5" index="0"></constructor-arg>
+	</bean>
+ -->	
+	<bean class="com.ts.Teacher" name="tch" ></bean>
+	
+	<bean class="com.ts.Student" name="std1" autowire="byType"/>
+	
+	
+</beans>
